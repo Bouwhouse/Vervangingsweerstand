@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefenen met Vervangingsweerstand</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Oefenen met Vervangingsweerstand</h1>
+        
+        <div class="circuit-container">
+            <div class="circuit-flex">
+                <img id="circuitImage" src="" alt="Schakeling" class="circuit-img">
+                <div id="resistorValues" class="resistor-values"></div>
+            </div>
+        </div>
+
+        <div class="input-section">
+            <div class="input-group">
+                <label for="answer">Vervangingsweerstand (Ω):</label>
+                <input type="number" id="answer" min="0" step="1" placeholder="Voer je antwoord in">
+            </div>
+            <button id="checkAnswer" class="btn">Controleer antwoord</button>
+            <button id="newCircuit" class="btn">Genereer nieuwe opdracht</button>
+        </div>
+
+        <div id="feedback" class="feedback"></div>
+    </div>
+    <script src="circuit.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
